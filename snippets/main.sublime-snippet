@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[main {
+	$0
+}]]></content>
+	<tabTrigger>main</tabTrigger>
+	<description>main definition</description>
+	<scope>source.gpc</scope>
+</snippet>

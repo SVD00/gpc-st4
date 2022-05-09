@@ -1,0 +1,71 @@
+// https://gpc.cronusmax.com/basic-gpc-structure
+
+define zero = 0;
+define one  = 1;
+define two  = 2;
+
+enum {
+    foo = 51
+}
+
+data (zero, one, two, 10, 128, 40);
+
+remap XB1_LB -> XB1_RB;
+remap XB1_RB -> XB1_LB;
+
+int example1 = 10;
+int example2, example3;
+int example4 = 17;
+
+init {
+    if(get_controller(abc, d) == PIO_PS4) {
+        example2 = 27;
+    } else {
+        example2 = 1;
+    }
+
+    for (i = 0; 10)
+}
+
+main {
+    if(example_function(abc, def)){
+        if(get_val(example3)){
+            combo_run(testing);
+            example_function2(abc, defg)
+        }
+    }
+}
+
+combo testing {
+    set_val(20, 100);
+    wait(example1);
+    wait(100);
+}
+
+function example_function() {
+    if(get_val(example2)){
+        example3 = 18;
+        return 1;
+    } else if(get_val(example4)){
+        example3 = 19;
+        return 1;
+    }
+    return 0;
+}
+
+function example_function2() {
+    while (a < 10) {
+        //while example
+    }
+
+    do {
+
+    } while(a != 0); 
+
+    switch () {
+        case:
+        foobar();
+    }
+
+}
+
